@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Statistics Calculator</title>
+  <link rel="stylesheet" href="Calculator.css">
+  <script src="Calculator.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Statistics Calculator</h1>
+  </header>
+  <div id="main-body" class="table">
+    <form id="input-form">
+    <h3>Enter numbers separated by spaces:</h3>
+    <input type="text" id="numberInput" placeholder="1 2 3 23 42 123" class="row" size="60" required autofocus>
+    </form>
+    <div id="buttons" class="row">
+      <button onclick="calculateMean()"> Mean</button>
+      <button onclick="calculateVariance()"> Variance</button>
+      <button onclick="calculateStDeviation()"> Standard Deviation</button>
+    </div>
+    
+    <div id="result" class="result"></div>
+    <div id="error" class="error">Invalid input. Please enter numbers separated by spaces.</div>
+  </div>
+</body>
+</html>
